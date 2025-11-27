@@ -233,6 +233,7 @@ document.addEventListener('DOMContentLoaded', function() {
   renderReflectionQuestions();
   renderConflicts();
   setupEventListeners();
+  setupTabs();  // <-- add this line
 });
 
 /* ============================================================================
@@ -377,6 +378,33 @@ function filterTimeline() {
     };
 
     entry.classList.toggle('hidden', !Object.values(matches).every(m => m));
+  });
+}
+
+function setupTabs() {
+  const tabButtons = document.querySelectorAll('.tab-button');
+  const tabSections = document.querySelectorAll('.tab-section');
+
+  // Show Full Timeline by default
+  document.getElementById('full-timeline').classList.add('active');
+
+  tabButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const target = button.getAttribute('data-tab');
+
+      // Update button active state
+      tabButtons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Show only the matching section
+      tabSections.forEach(sec => {
+        if (sec.id === target) {
+          sec.classList.add('active');
+        } else {
+          sec.classList.remove('active');
+        }
+      });
+    });
   });
 }
 
