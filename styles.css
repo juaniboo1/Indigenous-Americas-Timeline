@@ -749,6 +749,49 @@ select.form-control {
 /* ============================================================================
    ADDITIONAL THEME VARIABLES
    ============================================================================ */
+/* =======================================================================
+   TAB NAVIGATION
+   ======================================================================= */
+
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-8);
+  margin: var(--space-16) 0 var(--space-24);
+}
+
+.tab-button {
+  padding: var(--space-8) var(--space-16);
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-sm);
+  letter-spacing: var(--letter-spacing-tight);
+  transition: all 200ms ease;
+}
+
+.tab-button:hover {
+  border-color: var(--color-primary);
+  background: rgba(var(--color-teal-500-rgb), 0.06);
+}
+
+.tab-button.active {
+  background: var(--color-primary);
+  color: var(--color-btn-primary-text);
+  border-color: var(--color-primary);
+}
+
+/* TAB CONTENT SECTIONS */
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
+}
 
 :root {
   /* Region Colors - Application Specific */
