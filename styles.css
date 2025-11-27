@@ -917,6 +917,45 @@ body {
 /* ============================================================================
    NAVIGATION & CONTROLS
    ============================================================================ */
+/* TAB NAVIGATION */
+.tab-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 16px 0 24px;
+}
+
+.tab-button {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: 2px solid rgba(94, 82, 64, 0.4);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.tab-button:hover {
+  border-color: var(--color-accent);
+  background: rgba(50, 184, 198, 0.06);
+}
+
+.tab-button.active {
+  background: var(--color-accent);
+  color: #fff;
+  border-color: var(--color-accent);
+}
+
+/* TAB CONTENT SECTIONS */
+.tab-section {
+  display: none;
+}
+
+.tab-section.active {
+  display: block;
+}
 
 .controls {
   display: flex;
