@@ -1,4 +1,4 @@
-/*    // Timeline data
+  // Timeline data
     const timelineData = [
       {year:-2600000,period:"Pleistocene Epoch",peoples:"N/A",location:"Global",region:"Global",event:"Beginning of Pleistocene Epoch (Gelasian Stage) - characterized by glacial and interglacial cycles",citations:"[11]"},
       {year:-2400000,period:"Early Pleistocene",peoples:"N/A",location:"North Atlantic Region",region:"Global",event:"Possible first major glaciation in North Atlantic region",citations:"[12]"},
@@ -356,4 +356,3 @@
   </script>
 </body>
 </html>
-/* ============================================================================ */  
