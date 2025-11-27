@@ -6,8 +6,22 @@
   <title>Indigenous Americas Timeline: 2.6M B.C. – 1 A.D. | Hood Justice Educational Tool</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+<!-- TAB NAVIGATION -->
+<nav class="tab-nav">
+  <button class="tab-button active" data-tab="full-timeline">Full Timeline</button>
+  <button class="tab-button" data-tab="caribbean-detail">Caribbean Detail</button>
+  <button class="tab-button" data-tab="civilization-highlights">Civilization Highlights</button>
+  <button class="tab-button" data-tab="citations">Citations</button>
+</nav>  
 <body>
   <div class="container">
+        <!-- TAB NAVIGATION -->
+    <nav class="tab-nav">
+      <button class="tab-button active" data-tab="full-timeline">Full Timeline</button>
+      <button class="tab-button" data-tab="caribbean-detail">Caribbean Detail</button>
+      <button class="tab-button" data-tab="civilization-highlights">Civilization Highlights</button>
+      <button class="tab-button" data-tab="citations-tab">Citations</button>
+    </nav>
     <!-- HEADER -->
     <header class="header">
       <h1>Indigenous Americas Timeline</h1>
@@ -18,7 +32,8 @@
     <div class="mission-statement">
       <p><strong>Hood Justice Perspective:</strong> This timeline centers Indigenous peoples and nations, documents scholarly conflicts in archaeological data, and reframes the "Historic Age" (A.D. 1492+) as European invasion and Indigenous resistance—not neutral migration.</p>
     </div>
-
+    
+    <section id="full-timeline" class="tab-section active"> 
     <!-- NAVIGATION & FILTERS -->
     <nav class="controls">
       <div class="search-container">
@@ -55,8 +70,10 @@
       </div>
     </nav>
 
+    </section> 
+      
     <!-- CITATION KEY -->
-    <section id="citations" class="citations-section">
+    <section id="citations-key" class="citations-section">
       <h2>Citation Key</h2>
       <ul class="citations-list">
         <li><strong>[1]</strong> The Bering Land Bridge Theory - NPS</li>
@@ -78,6 +95,8 @@
       </ul>
     </section>
 
+    </section> 
+    
     <!-- TIMELINE CONTAINER -->
     <section id="timeline" class="timeline-section">
       <h2>Timeline: 2.6 Million B.C. to 1 A.D.</h2>
@@ -85,7 +104,10 @@
         <!-- Timeline entries will be inserted here by JavaScript -->
       </div>
     </section>
-
+    </section> 
+    
+ <section id="caribbean-detail" class="tab-section">
+   
     <!-- CARIBBEAN DETAIL VIEW -->
     <section id="caribbean-view" class="caribbean-section">
       <h2>Caribbean Detail: Irving Rouse's Four Migrations Framework</h2>
@@ -95,6 +117,13 @@
       <div id="caribbeanTimeline" class="caribbean-timeline">
         <!-- Caribbean entries will be inserted here by JavaScript -->
       </div>
+    </section>
+   
+  </section>
+        <!-- CIVILIZATION HIGHLIGHTS TAB CONTENT -->
+    <section id="civilization-highlights" class="tab-section">
+      <h2>Civilization Highlights</h2>
+      <p>Here you can highlight Olmec, Chavín, Adena, Hopewell, Taíno, etc. You can add cards or text later.</p>
     </section>
 
     <!-- REFLECTION QUESTIONS -->
@@ -113,6 +142,29 @@
         <!-- Conflicts will be inserted here by JavaScript -->
       </div>
     </section>
+    <!-- CITATIONS TAB CONTENT -->
+    <section id="citations-tab" class="tab-section">
+      <h2>Full Citations</h2>
+      <ul class="citations-list">
+        <li><strong>[1]</strong> The Bering Land Bridge Theory - NPS</li>
+        <li><strong>[2]</strong> Archeology This Month: Native American Heritage - NPS</li>
+        <li><strong>[3]</strong> 1848 Timeline of Indian and Latin America</li>
+        <li><strong>[4]</strong> Taíno: Indigenous Caribbeans - Black History Month 2025</li>
+        <li><strong>[5]</strong> Paleo-Indians in North America - EBSCO Research</li>
+        <li><strong>[6]</strong> Display Content: First Americans Timeline - Digital History</li>
+        <li><strong>[7]</strong> Siegel (1991): Migration Research in Saladoid Archaeology</li>
+        <li><strong>[8]</strong> Escobar (2010): Latin America at a Crossroads</li>
+        <li><strong>[9]</strong> Gillispie: An Overview of Alaskan Prehistoric Cultures</li>
+        <li><strong>[10]</strong> NPS: A Survey of Human Migration in Alaska's National Parks</li>
+        <li><strong>[11]</strong> Pleistocene Epoch - Britannica</li>
+        <li><strong>[12]</strong> Brown: American Indian History Timeline</li>
+        <li><strong>[13]</strong> Taínos: Caribbean Indigenous Peoples - ORIAS</li>
+        <li><strong>[14]</strong> Siegel et al. (2015): Paleoenvironmental Evidence - Eastern Caribbean</li>
+        <li><strong>[15]</strong> Manning (2021): Decolonial Feminist Theory</li>
+        <li><strong>[16]</strong> Paleoindian Period 16000-8000 BC - Encyclopedia Virginia</li>
+      </ul>
+    </section>
+
 
     <!-- FOOTER -->
     <footer class="footer">
