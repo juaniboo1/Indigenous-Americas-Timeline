@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indigenous Americas Timeline: 2.6M B.C. – 1 A.D. | Hood Justice</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="header">
+      <h1>Indigenous Americas Timeline</h1>
+      <p class="subtitle">2.6 Million B.C. – 1 A.D.: A Hood Justice Educational Tool</p>
+      <div class="mission-statement">
+        <p><strong>Hood Justice Perspective:</strong> This timeline centers Indigenous peoples and nations, documents scholarly conflicts in archaeological data, and reframes the "Historic Age" (A.D. 1492+) as European invasion and Indigenous resistance—not neutral migration.</p>
+      </div>
+    </header>
+
+    <!-- NAVIGATION TABS -->
+    <nav class="tabs">
+      <button class="tab-button active" data-tab="timeline-view">Full Timeline</button>
+      <button class="tab-button" data-tab="caribbean-view">Caribbean Detail (Rouse)</button>
+      <button class="tab-button" data-tab="civilizations-view">Civilizations</button>
+      <button class="tab-button" data-tab="citations-view">Citations & Conflicts</button>
+    </nav>
+
+    <!-- MAIN CONTENT AREA -->
+    <main class="main-content">
+
+      <!-- TAB 1: FULL TIMELINE VIEW -->
+      <div id="timeline-view" class="tab-content active">
+        <div class="controls">
+          <input type="text" id="search-input" class="search-bar" placeholder="Search peoples, locations, or events...">
+          
+          <div class="filters">
+            <label><input type="checkbox" class="region-filter" value="North America" checked> North America</label>
+            <label><input type="checkbox" class="region-filter" value="Caribbean" checked> Caribbean</label>
+            <label><input type="checkbox" class="region-filter" value="Mesoamerica" checked> Mesoamerica</label>
+            <label><input type="checkbox" class="region-filter" value="South America" checked> South America</label>
+            <label><input type="checkbox" class="region-filter" value="Arctic/Subarctic" checked> Arctic/Subarctic</label>
+            <label><input type="checkbox" class="region-filter" value="Global" checked> Global</label>
+          </div>
+
+          <div class="period-filter">
+            <label>Filter by Period:</label>
+            <select id="period-select">
+              <option value="">All Periods</option>
+              <option value="Pleistocene">Pleistocene Epoch</option>
+              <option value="Last Glacial Maximum">Last Glacial Maximum</option>
+              <option value="Paleoindian">Paleoindian Period</option>
+              <option value="Archaic">Archaic Tradition</option>
+              <option value="Ceramic">Ceramic Age</option>
+              <option value="Formative">Formative/Complexity</option>
+              <option value="Historic">Historic Age</option>
+            </select>
+          </div>
+
+          <button id="zoom-out" class="zoom-btn">Zoom Out (Millennia)</button>
+          <button id="zoom-in" class="zoom-btn">Zoom In (Centuries)</button>
+          <button id="print-btn" class="print-btn">Print Timeline</button>
+        </div>
+
+        <div id="timeline-container" class="timeline-container"></div>
+      </div>
+
+      <!-- TAB 2: CARIBBEAN DETAIL VIEW (Irving Rouse) -->
+      <div id="caribbean-view" class="tab-content">
+        <div class="caribbean-section">
+          <h2>Irving Rouse's Four Migrations: Caribbean Colonization Framework</h2>
+          <p>Irving Rouse (1901–1992), pioneering Caribbean archaeologist, proposed that the Caribbean was colonized through four major migrations from mainland South America, each associated with distinct cultural ages.</p>
+          
+          <div class="rouse-migrations">
+            <div class="migration-card">
+              <h3>Migration I: Lithic Age (ca. 4000–3000 B.C.)</h3>
+              <p><strong>Peoples:</strong> Early maritime explorers (Arawakan/Lokono ancestors)</p>
+              <p><strong>Technology:</strong> Simple stone tools; no pottery</p>
+              <p><strong>Geography:</strong> From Yucatán and Orinoco lowlands into Caribbean islands</p>
+              <p><strong>Evidence:</strong> Few archaeological sites; oral tradition and paleoenvironmental data</p>
+            </div>
+
+            <div class="migration-card">
+              <h3>Migration II: Archaic Age (ca. 3000–1000 B.C.)</h3>
+              <p><strong>Peoples:</strong> Ortoiroid/Archaic foragers</p>
+              <p><strong>Technology:</strong> Improved stone tools; pre-ceramic</p>
+              <p><strong>Geography:</strong> Widespread across Greater and Lesser Antilles</p>
+              <p><strong>Evidence:</strong> Archaic sites from Trinidad to Puerto Rico; landscape modification (charcoal)</p>
+            </div>
+
+            <div class="migration-card">
+              <h3>Migration III: Ceramic Age (ca. 200 B.C.–1500 A.D.)</h3>
+              <p><strong>Peoples:</strong> Saladoid agro-ceramists (ancestors of Taíno, Arawakan-speakers)</p>
+              <p><strong>Technology:</strong> Pottery, horticulture (maize, manioc, cassava)</p>
+              <p><strong>Geography:</strong> Saladoid expansion through Lesser Antilles and Greater Antilles</p>
+              <p><strong>Evidence:</strong> Decorated pottery (Cedrosan, Huecan), permanent villages, complex chiefdoms (Taíno)</p>
+            </div>
+
+            <div class="migration-card">
+              <h3>Migration IV: Historic Age (A.D. 1492+)</h3>
+              <p><strong>Peoples:</strong> Europeans (Spanish, Portuguese, English, French)</p>
+              <p><strong>Technology:</strong> Steel weapons, ships, disease</p>
+              <p><strong>Geography:</strong> Caribbean-wide colonization and invasion</p>
+              <p><strong>Impact:</strong> Indigenous genocide, enslavement, cultural erasure; Indigenous survival and resistance</p>
+              <p class="hood-justice-note">🚨 Hood Justice Note: Rouse's term "migration" for European arrival sanitizes invasion, enslavement, and genocide. We reframe this as "European Invasion & Indigenous Resistance."</p>
+            </div>
+          </div>
+
+          <div id="caribbean-timeline-container" class="timeline-container"></div>
+        </div>
+      </div>
+
+      <!-- TAB 3: CIVILIZATIONS HIGHLIGHTS -->
+      <div id="civilizations-view" class="tab-content">
+        <h2>Major Indigenous Civilizations & Cultures</h2>
+        <div id="civilizations-container" class="civilizations-container"></div>
+      </div>
+
+      <!-- TAB 4: CITATIONS & CONFLICTS -->
+      <div id="citations-view" class="tab-content">
+        <section id="citations" class="citations-section">
+          <h2>Citation Key: Your Research Sources</h2>
+          <ul class="citations-list">
+            <li>[1] The Bering Land Bridge Theory - National Park Service</li>
+            <li>[2] Archeology This Month: Native American Heritage - National Park Service</li>
+            <li>[3] 1848 Timeline of Indian and Latin America (c. 14,500 B.C. – 1848 A.D.)</li>
+            <li>[4] Taíno: Indigenous Caribbeans - Black History Month 2025</li>
+            <li>[5] Paleo-Indians in North America - EBSCO Research Starters</li>
+            <li>[6] First Americans Timeline - Digital History Project</li>
+            <li>[7] Siegel (1991): Migration Research in Saladoid Archaeology - A Review</li>
+            <li>[8] Escobar (2010): Latin America at a Crossroads</li>
+            <li>[9] Gillispie: An Overview of Alaskan Prehistoric Cultures</li>
+            <li>[10] National Park Service: A Survey of Human Migration in Alaska's National Parks</li>
+            <li>[11] Pleistocene Epoch - Britannica Encyclopedia</li>
+            <li>[12] Brown: American Indian History Timeline (Since Time Immemorial to C.E. 1450)</li>
+            <li>[13] Taínos: Caribbean Indigenous Peoples - ORIAS (UC Berkeley)</li>
+            <li>[14] Siegel et al. (2015): Paleoenvironmental Evidence for First Human Colonization - Eastern Caribbean</li>
+            <li>[15] Manning (2021): Decolonial Feminist Theory</li>
+            <li>[16] Paleoindian Period 16000–8000 B.C. - Encyclopedia Virginia</li>
+          </ul>
+        </section>
+
+        <section id="conflicts" class="conflicts-section">
+          <h2>Scholarly Conflicts in the Data</h2>
+          <p>Your research sources document significant debates among archaeologists and anthropologists. Understanding these conflicts reveals how knowledge is constructed and contested.</p>
+          <div id="conflicts-container" class="conflicts-container"></div>
+        </section>
+
+        <section class="hood-justice-section">
+          <h2>🚨 Hood Justice Reflection Questions</h2>
+          <div id="reflection-questions" class="reflection-container"></div>
+        </section>
+      </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <p><strong>Indigenous Americas Timeline</strong> © 2025 | Hood Justice Educational Project</p>
+      <p>Built with research from your sources. All data sourced and cited. Last updated: November 2025.</p>
+      <p><a href="https://github.com" target="_blank">Host on GitHub</a> | <a href="#print-btn">Print This Timeline</a> | <a href="#search-input">Search</a></p>
+    </footer>
+  </div>
+
+  <!-- SCRIPTS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
